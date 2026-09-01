@@ -92,7 +92,7 @@ header {
   align-items: center;
 }
 
-header__img--wrapper {
+.header__img--wrapper {
   padding: 20px;
   position: relative;
   z-index: 2;
@@ -167,6 +167,20 @@ HIGHLIGHTS
   transform: translateY(-100%);
 }
 
+#highlights:after {
+  background: url("assets/wave.svg");
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  bottom: 1px;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(100%);
+}
+
 .wave {
   width: 100%;
   height: auto;
@@ -208,4 +222,14 @@ HIGHLIGHTS
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+}
+
+/*
+
+FEATURES
+
+*/
+
+#features {
+  background-color: rgba(52, 192, 247, 0.287);
 }
