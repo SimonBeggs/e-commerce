@@ -18,6 +18,10 @@ img {
   padding: 20px;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .nav__container {
   width: 100%;
   max-width: 1200px;
@@ -88,6 +92,14 @@ header {
   align-items: center;
 }
 
+header__img--wrapper {
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+
 h1 {
   font-size: 56px;
   color: #2222f6;
@@ -118,10 +130,6 @@ button:active {
   border: none;
 }
 
-header__img--wrapper {
-  padding: 20px;
-}
-
 .container {
   padding: 56px 0;
 }
@@ -137,6 +145,34 @@ header__img--wrapper {
 HIGHLIGHTS
 
 */
+
+#highlights {
+  position: relative;
+}
+
+/* #highlights:before {
+} */
+
+#highlights:before {
+  background: url("assets/wave.svg");
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  top: 1px;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
+
+.wave {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: block;
+}
 
 .highlight__wrapper {
   display: flex;
@@ -157,8 +193,16 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-  border: 2px solid #2222f6;
-  padding: 80px;
+  border: 2px solid #2222f652;
+  color: #2222f6;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 
 .highlight__subtitle {
