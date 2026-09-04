@@ -21,6 +21,19 @@
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
         </div>
+        <button class="btn__menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Books</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       <header>
         <div class="header__container">
@@ -325,9 +338,10 @@
             <h2 class="section__title">
               Explore more <span class="purple">Books</span>
             </h2>
-            <div class="button-container">
+            <a href="#features">
               <button class="btn">Browse books</button>
-            </div>
+            </a>
+          </div>
           </div>
         </div>
       </section>
@@ -335,7 +349,7 @@
 
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row row__column">
           <a href="#">
             <figure class="footer__logo">
               <img
@@ -345,16 +359,15 @@
               />
             </figure>
           </a>
-          <div class="footer__link">
+          <div class="footer__list">
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="" class="no-cursor">About</a></li>
-              <li><a href="">Books</a></li>
-              <li><a href="" class="no-cursor">Contact</a></li>
+              <li><a href="" class="footer__link">Home</a></li>
+              <li><a href="" class="footer__link no-cursor">About</a></li>
+              <li><a href="" class="footer__link">Books</a></li>
+              <li><a href="" class="footer__link no-cursor">Contact</a></li>
             </ul>
           </div>
-          <div class="footer__copyright">
-            <p>Copyright &copy; 2023 Library. All rights reserved.</p>
+          <div class="footer__copyright">Copyright &copy; 2023 Library.
           </div>
         </div>
       </div>
