@@ -89,6 +89,7 @@ ul {
   text-align: center;
   border: none;
   color: #2222f6;
+  display: none;
 }
 
 .menu__backdrop {
@@ -102,10 +103,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: none; */
+  display: none;
+  transition: opacity 300ms ease, visibility 300ms;
+  opacity: 0;
+  visibility: hidden;
 }
 .menu--open .menu__backdrop {
-  display: flex;
+   visibility: visible;
+  opacity: 1;
 }
 
 .menu__links {
@@ -406,4 +411,20 @@ footer {
 
 .footer__link {
   padding: 0 8px;
+}
+
+/*
+
+MEDIA
+
+*/
+
+@media (max-width: 550px) {
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
 }
